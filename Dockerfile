@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:alpine
+FROM jenkins/jenkins:2.103-alpine
 
 MAINTAINER ragetti 
 
