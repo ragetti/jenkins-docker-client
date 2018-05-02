@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.103-alpine
+FROM jenkins/jenkins:2.119-alpine
 
 MAINTAINER ragetti 
 
@@ -9,5 +9,5 @@ RUN curl https://get.docker.com/builds/Linux/x86_64/docker-latest.tgz | tar xvz 
 
 COPY entrypoint.sh /usr/local/bin/
 
-ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
+CMD ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
 
